@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Photo Collage</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <div class="collage">
+    <img src="https://www.aroshaliny.com/wp-content/uploads/2025/06/Joey0862.jpg" class="img img1" alt="">
+    <div class="img img2 arch">
+      <img src="https://www.aroshaliny.com/wp-content/uploads/2025/06/H54A9591-copy-93.jpg" alt="">
+    </div>
+    <img src="https://www.aroshaliny.com/wp-content/uploads/2025/06/H54A1991.jpg" class="img img3 grayscale" alt="">
+    <img src="https://www.aroshaliny.com/wp-content/uploads/2025/06/MILK1313.jpg" class="img img4" alt="">
+    <img src="https://res.cloudinary.com/dh6qbcjvf/images/v1720196560/Nicelife_Cocktails_50_rb874i/Nicelife_Cocktails_50_rb874i.jpg" class="img img5" alt="">
+    <img src="https://www.aroshaliny.com/wp-content/uploads/2025/06/Joey-Bentall2580.jpg" class="img img6" alt="">
+    <img src="https://www.aroshaliny.com/wp-content/uploads/2025/06/H54A5408.jpg" class="img img7" alt="">
+    <img src="https://res.cloudinary.com/dh6qbcjvf/images/w_1707,h_2560,c_scale/v1720196511/Cynical_Ceramics_Coffee_Mug_50_qcm7x9/Cynical_Ceramics_Coffee_Mug_50_qcm7x9.jpg" class="img img8" alt="">
+    <div class="center-text">
+      <span>AROSHALINY</span><br>
+      <span>GODFREY</span>
+    </div>
+  </div>
+
+
+   <!-- Side Buttons -->
+  <div class="side-buttons">
+    <button onclick="togglePanel()">SERVICES</button>
+    <button onclick="alert('Contact form or link here')">CONTACT</button>
+  </div>
+
+  <!-- Services Panel -->
+  <div id="servicesPanel" class="panel">
+    <button class="close-panel" onclick="togglePanel()">✖</button>
+    <h2>Services</h2>
+    <div class="services-section">
+      <h3>Stills:</h3>
+      <ul>
+        <li>Food Photography for CPG Brands, Restaurants, and Bloggers</li>
+        <li>Product Photography: Health & Wellness, Food & Beverage, and Home Decor</li>
+        <li>Lifestyle Photography</li>
+        <li>Floral Photography</li>
+        <li>Recipe Development, Food Styling</li>
+        <li>Set Design, Prop Creation and Styling</li>
+      </ul>
+      <h3>Motion:</h3>
+      <ul>
+        <li>Stop Motion Animations</li>
+        <li>Cinematic Videography</li>
+      </ul>
+      <h3>Process</h3>
+      <strong>Pre-Production:</strong>
+      <ul>
+        <li>Brand discovery call</li>
+        <li>Concept and Mood board</li>
+        <li>Contract and Deposit</li>
+        <li>Prop sourcing / Food Prep</li>
+        <li>Product drop off (If it's a drop and shoot)</li>
+      </ul>
+    </div>
+  </div>
+
+    <script>
+    function togglePanel() {
+      document.getElementById("servicesPanel").classList.toggle("active");
+    }
+
+    document.addEventListener("click", function (event) {
+      const panel = document.getElementById("servicesPanel");
+      const buttons = document.querySelectorAll(".side-buttons button");
+      const isClickInsidePanel = panel.contains(event.target);
+      const isClickOnAnyButton = Array.from(buttons).some(btn => btn.contains(event.target));
+      if (!isClickInsidePanel && !isClickOnAnyButton && panel.classList.contains("active")) {
+        panel.classList.remove("active");
+      }
+    });
+  </script>
+</body>
+</html>
