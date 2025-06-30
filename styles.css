@@ -54,27 +54,27 @@ img {
 }
 
 /* Individual image positions and sizes */
-.img1 { top: 60px; left: 40px; width: 220px; height: 290px; }
-.img2 { top: 20px; left: 300px; width: 220px; height: 300px; border-radius: 40% 40% 0 0; border: 6px solid #97b42c; background: none; }
+.img1 { top: 60px; left: 40px; width: 240px; height: 320px; }
+.img2 { top: 20px; left: 300px; width: 240px; height: 320px; border-radius: 40% 40% 0 0; border: 6px solid #97b42c; background: none; }
 .img2 img { border-radius: 40% 40% 0 0; }
-.img3 { top: 30px; left: 570px; width: 240px; height: 180px; filter: grayscale(1); }
-.img4 { top: 50px; right: 50px; width: 260px; height: 290px; }
+.img3 { top: 30px; left: 570px; width: 300px; height: 220px; filter: grayscale(1); }
+.img4 { top: 50px; right: 50px; width: 270px; height: 320px; }
 .img5 { bottom: 140px;
     left: 40px;
     width: 340px;
     height: 250px; }
 .img6 { bottom: 60px;
     left: 320px;
-    width: 220px;
-    height: 240px; }
+    width: 240px;
+    height: 280px; }
 .img7 {     bottom: 60px;
     right: 320px;
-    width: 220px;
-    height: 280px; }
+    width: 240px;
+    height: 290px; }
 .img8 { top: 320px;
     right: 20px;
-    width: 220px;
-    height: 260px; }
+    width: 240px;
+    height: 320px; }
 
 .grayscale {
   filter: grayscale(1);
