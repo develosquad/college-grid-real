@@ -196,7 +196,7 @@ img {
 @media (max-width: 768px) {
   .collage {
     height: auto;
-  min-height: unset; /* adjust as needed */
+  min-height: 800px; /* adjust as needed */
   position: relative;
     
   }
