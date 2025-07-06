@@ -195,7 +195,7 @@ img {
 /* Mobile Responsive Layout */
 @media (max-width: 768px) {
   .collage {
-    height: 90vh; /* Adjust to fit all images */
+    height: 70vh; /* Adjust to fit all images */
     width: 100%;
     
   }
